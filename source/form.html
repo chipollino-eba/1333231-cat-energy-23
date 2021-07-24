@@ -39,79 +39,112 @@
       <h1 class="selection__title">Подбор программы</h1>
       <p class="selection__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <div class="appointment">
-        <form class="appointment__form" action="https://echo.htmlacademy.ru" method="POST">
+      <!--ФОРМА НАЧАЛО -->
+      <div class="form-wrapper">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
-          <p class="appointment__item">
-            <label for="appointment-name">Имя:*
-              <input type="text" name="name" id="appointment-name" placeholder="БАРСИК">
+          <div class="form__cat">
+            <p class="form__name">
+              <label class="form__text" for="name">Имя:*
+                <input class="form__text" type="text" name="name" id="name" placeholder="БАРСИК">
+              </label>
+            </p>
+
+            <p class="form__weight">
+              <label class="form__text" for="weight">Вес(кг):*
+                <input class="form__text" type="text" name="weight" id="weight" placeholder="7">
+              </label>
+            </p>
+
+            <p class="form__age">
+              <label class="form__text" for="age">Возраст (лет):
+                <input class="form__text" type="text" name="age" id="age" placeholder="7">
+              </label>
+            </p>
+          </div>
+
+          <div class="form__food">
+            <p class="form__slim">
+              <label class="form__type">
+                <input class="form__type-text" type="radio" name="type" value="Похудение" checked>Похудение
+                <!-- <div></div> -->
+              </label>
+            </p>
+
+            <p class="form__pro">
+              <label class="form__type">
+                <input class="form__type-text" type="radio" name="type" value="Набор массы">Набор массы
+                <!-- <div></div> -->
+              </label>
+            </p>
+
+            <p class="form__doubt">
+              <label class="form__type">
+                <input class="form__type-text" type="radio" name="type" value="Не знаю (нужен ваш совет)">Не знаю (нужен
+                ваш совет)
+                <!-- <div></div> -->
+              </label>
+            </p>
+          </div>
+
+          <div class="form__owner">
+            <h3 class="form__subtitle">Контактные данные владельца кота</h3>
+            <p>
+              <label class="form__text" for="email">E-mail:*
+                <input class="form__text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              </label>
+            </p>
+            <p>
+              <label class="form__text" for="tel">Телефон:*
+                <input class="form__text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+              </label>
+            </p>
+
+            <h3 class="form__subtitle">Комментарий</h3>
+            <label class="form__text" for="text">
+              <input class="form__text" id="text" type="text" name="text" placeholder="Расскажите обо всех повадках кота">
+            </label>
+          </div>
+
+          <h3 class="form__subtitle">Дополнительно</h3>
+
+          <p class="form__check">
+            <label for="sugar">
+              <input class="form__check-text" type="checkbox" name="sugar" id="sugar">сахарозаменитель
+            </label>
+          </p>
+          <p class="form__check">
+            <label for="water">
+              <input class="form__check-text" type="checkbox" name="water" id="water">питьевая
+              вода
+            </label>
+          </p>
+          <p class="form__check">
+            <label for="milk">
+              <input class="form__check-text" type="checkbox" name="milk" id="milk">молоко
             </label>
           </p>
 
-          <p class="appointment__item">
-            <label for="appointment-weight">Вес(кг):*
-              <input type="text" name="weight" id="appointment-weight" placeholder="7">
+          <p class="form__check">
+            <label for="vitamin">
+              <input class="form__check-text" type="checkbox" name="vitamin" id="vitamin">витамины
             </label>
           </p>
 
-          <p class="appointment__item">
-            <label for="appointment-age">Возраст (лет):
-              <input type="text" name="age" id="appointment-age" placeholder="7">
-            </label>
-          </p>
+          <button class="form__submit form__submit-text" type="submit">Отправить заявку</button>
 
-          <label class="appointment__type">
-            <input type="radio" name="type" value="похудение" checked>Похудение
-            <div></div>
-          </label>
-
-          <label class="appointment__type">
-            <input type="radio" name="type" value="Набор массы">Набор массы
-            <div></div>
-          </label>
-
-          <label class="appointment__type">
-            <input type="radio" name="type" value="Не знаю (нужен ваш совет)">Не знаю (нужен ваш совет)
-            <div></div>
-          </label>
-
-          <h3>Контактные данные владельца кота</h3>
-          <p>
-            <label for="email">E-mail:*
-              <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-            </label>
-          </p>
-          <p>
-            <label for="tel">Телефон:*
-              <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
-            </label>
-          </p>
-
-          <h3>Комментарий</h3>
-          <label for="appointment-text">
-            <input id="appointment-text" type="text" name="text" placeholder="Расскажите обо всех повадках кота">
-          </label>
-
-          <h3>Дополнительно</h3>
-          <p class="appointment__check"><label for="sugar"><input type="checkbox" name="sugar"
-                id="sugar">сахарозаменитель</label></p>
-          <p class="appointmen__check"><label for="water"><input type="checkbox" name="water" id="water">питьевая
-              вода</label></p>
-          <p class="appointment__check"><label for="milk"><input type="checkbox" name="milk" id="milk">молоко</label></p>
-          <p class="appointment__check"><label for="vitamin"><input type="checkbox" name="vitamin" id="vitamin">витамины</label>
-          </p>
-          <button type="submit">отправить заявку</button>
         </form>
-        <p class="appointment__text">* - Обязательные поля</p>
+        <p class="form__text-down">* - Обязательные поля</p>
       </div>
 
     </section>
+    <!-- ФОРМА КОНЕЦ -->
 
     <!-- СОТРУДНИЧЕСТВО НАЧАЛО -->
     <section class="partners">
       <div class="partners__list">
-        <p class="partners__dealer">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="partners__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="partners__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
     </section>
     <!-- СОТРУДНИЧЕСТВО КОНЕЦ -->
@@ -124,15 +157,16 @@
 
   </main>
 
-  <footer class="page__footer page__footer-wrapper">
+  <!-- ПОДВАЛ НАЧАЛО -->
+  <footer class="page__footer">
     <section class="footer">
       <img class="footer__logo" src="../img/logofooter.svg" width="128" height="24" alt="Логотип компании">
       <ul class="footer__list">
-        <li class="footer__item"><a href="#"><img class="footer__item-vk" src="../img/logovk.svg"
+        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logovk.svg"
               alt="Логотип ВКонтакте"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-inst" src="../img/logoinst.svg"
+        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logoinst.svg"
               alt="Логотип Инстаграм"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-fb" src="../img/logofacebook.svg"
+        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logofacebook.svg"
               alt="Логотип Фэйсбук"></li></a>
       </ul>
       <p class="footer__academy">HTML Academy</p>
@@ -140,6 +174,7 @@
           alt="Логотип HTML Academy"></a>
     </section>
   </footer>
+  <!-- ПОДВАЛ КОНЕЦ -->
 
 </body>
 

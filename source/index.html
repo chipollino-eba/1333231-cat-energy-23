@@ -33,11 +33,12 @@
     </nav>
     <!-- НАВИГАЦИЯ КОНЕЦ -->
   </header>
-  <p class="page__body-subtitle">Функциональное питание для котов</p>
-  <h1 class="page__body-slogan cat">Занялся собой? Займись котом!</h1>
-  <img class="page__body-chiken" src="../img/chiken.png" width="280" height="270" alt="Корм со вкусом курицы">
-  <a class="page__body-program" href="form.html">Подобрать программу</a>
-  <!-- ШАПКА КОНЕЦ -->
+  <div class="functional">
+    <p class="functional__subtitle">Функциональное питание для котов</p>
+    <h1 class="functional__slogan cat">Занялся собой? Займись котом!</h1>
+    <img class="functional__chiken" src="../img/chiken.png" width="280" height="270" alt="Корм со вкусом курицы">
+    <a class="functional__program" href="form.html">Подобрать программу</a>
+  </div><!-- ШАПКА КОНЕЦ -->
 
   <main class="page__main">
     <!-- ТИП ПРОГРАММ НАЧАЛО -->
@@ -95,9 +96,9 @@
         <p class="example__money">затраты на питание: 15 000 руб.</p>
         <img class="example__cat-big" src="../img/bigcat.png" width="311" height="232" alt="Упитаный котик">
         <img class="example__cat-little" src="../img/littlecat.png" width="251" height="240" alt="Стойный котик">
-        <div>
-          <p class="example__was">было</p>
-          <p class="example__became">стало</p>
+        <div class="example__switch">
+          <p class="example__switch-was">было</p>
+          <p class="example__switch-became">стало</p>
         </div>
       </div>
     </section>
@@ -106,8 +107,8 @@
     <!-- СОТРУДНИЧЕСТВО НАЧАЛО -->
     <section class="partners">
       <div class="partners__list">
-        <p class="partners__dealer">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="partners__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="partners__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
     </section>
     <!-- СОТРУДНИЧЕСТВО КОНЕЦ -->
@@ -119,18 +120,24 @@
     <!-- КАРТА КОНЕЦ -->
   </main>
 
-  <footer class="page__footer page__footer-wrapper">
+  <!-- ПОДВАЛ НАЧАЛО -->
+  <footer class="page__footer">
     <section class="footer">
       <img class="footer__logo" src="../img/logofooter.svg" width="128" height="24" alt="Логотип компании">
       <ul class="footer__list">
-        <li class="footer__item"><a href="#"><img class="footer__item-vk" src="../img/logovk.svg" alt="Логотип ВКонтакте"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-inst" src="../img/logoinst.svg" alt="Логотип Инстаграм"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-fb" src="../img/logofacebook.svg" alt="Логотип Фэйсбук"></li></a>
+        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logovk.svg"
+              alt="Логотип ВКонтакте"></li></a>
+        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logoinst.svg"
+              alt="Логотип Инстаграм"></li></a>
+        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logofacebook.svg"
+              alt="Логотип Фэйсбук"></li></a>
       </ul>
       <p class="footer__academy">HTML Academy</p>
-      <a href="#"><img class="footer__academy-logo" width="27" height="34" src="../img/logoacademy.svg" alt="Логотип HTML Academy"></a>
+      <a href="#"><img class="footer__academy-logo" width="27" height="34" src="../img/logoacademy.svg"
+          alt="Логотип HTML Academy"></a>
     </section>
   </footer>
+  <!-- ПОДВАЛ КОНЕЦ -->
 
 </body>
 
