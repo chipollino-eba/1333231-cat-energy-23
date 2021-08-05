@@ -9,8 +9,11 @@
 <body class="page__body">
   <!-- ШАПКА НАЧАЛО-->
   <header class="page-header">
-    <a class="page-hader__logo" href="index.html">
-      <img class="page-header__logo-image" src="../img/logoheader.svg" width="191" height="38" alt="Логотип Cat Energy">
+    <a class="page-hader__logo link" href="index.html">
+      <img src="./img/logoone.svg" alt="Маленький логотип">
+    </a>
+    <a class="page-hader__logo link" href="index.html">
+      <img src="./img/logotwo.svg" alt="Текстовый логотип">
     </a>
     <!-- НАВИГАЦИЯ НАЧАЛО -->
     <nav class="main-nav">
@@ -19,87 +22,93 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <a href="index.html">
-            <li class="site-list__item">Главная</li>
-          </a>
-          <a href="catalog.html">
-            <li class="site-list__item">Каталог продукции</li>
-          </a>
-          <a href="form.html">
-            <li class="site-list__item">Подбор программы</li>
-          </a>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
     <!-- НАВИГАЦИЯ КОНЕЦ -->
   </header>
-  <div class="functional">
-    <p class="functional__subtitle">Функциональное питание для котов</p>
-    <h1 class="functional__slogan cat">Занялся собой? Займись котом!</h1>
-    <img class="functional__chiken" src="../img/chiken.png" width="280" height="270" alt="Корм со вкусом курицы">
-    <a class="functional__program" href="form.html">Подобрать программу</a>
-  </div><!-- ШАПКА КОНЕЦ -->
+  <!-- ШАПКА КОНЕЦ -->
 
   <main class="page__main">
+
+    <section class="functional">
+      <h1 class="functional__title">Функциональное питание для котов</h1>
+      <h2 class="functional__slogan cat">Занялся собой? Займись котом!</h2>
+      <img class="functional__cat" width="320" height="302" src="./img/backgroundcat.png" alt="Облизывающийся котик">
+      <img class="functional__chiken" src="./img/chikenminimain.png" width="280" height="270"
+        alt="Корм со вкусом курицы">
+      <button class="functional__program" href="form.html">Подобрать программу</button>
+    </section>
+
     <!-- ТИП ПРОГРАММ НАЧАЛО -->
-    <div class="program">
-      <div class="program__list">
-        <img class="program__list-item-image" src="" alt="">
-        <p class="program__list-item-slim">Похудение</p>
-        <p class="program__list-item-desc">Ваш кот весит больше собаки и почти утратил способность лазить по
-          деревьям? Пора на диету! Cat Energy Slim
-          поможет вашему питомцу сбросить лишний вес.</p>
-        <p class="program__list-item-catalog">Каталог slim</p>
-      </div>
-      <div class="program__list">
-        <img class="program__list-item-image" src="" alt="">
-        <p class="program__list-item-slim">Набор массы</p>
-        <p class="program__list-item-desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-          Energy Pro поможет вашему коту нарастить необходимые
-          мышцы!</p>
-        <p class="program__list-item-catalog">Каталог pro</p>
-      </div>
-    </div>
+    <section class="program">
+      <ul class="program__list">
+        <li class="program__list-item">
+          <h3 class="programm__title">Похудение</h3>
+          <p class="programm__text programm__text--slim">
+            Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim
+            поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="programm__link link" href="#">Каталог slim</a>
+        </li>
+        <li class="program__item">
+          <h3 class="programm__title">Набор массы</h3>
+          <p class="programm__text programm__text--big">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+            Energy Pro поможет вашему коту нарастить необходимые
+            мышцы!
+          </p>
+          <a class="programm__link link" href="#">Каталог pro</a>
+        </li>
+      </ul>
+    </section>
     <!-- ТИП ПРОГРАММ КОНЕЦ -->
 
     <!-- ФИШКИ НАЧАЛО -->
     <section class="features">
-      <div class="features__wrapper">
-        <h2 class="features__title">Как это работает</h2>
-        <ul class="features__list">
-          <li class="features__list-item-one">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="features__list-item-two">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </li>
-          <li class="features__list-item-three">Замените один-два приема обычной еды на наше функциональное питание.
-          </li>
-          <li class="features__list-item-four">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-        </ul>
-      </div>
+      <h2 class="features__title title">Как это работает</h2>
+      <ul class="features__list">
+        <li class="features__item-image features__item-image--leaf text">
+          Функциональное питание содержит только полезные питательные вещества.
+        </li>
+        <li class="features__item-image features__item-image--water text">
+          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+        </li>
+        <li class="features__item-image features__item-image--eat text">
+          Замените один-два приема обычной еды на наше функциональное питание.
+        </li>
+        <li class="features__item-image features__item-image--alarm text">
+          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+        </li>
+      </ul>
     </section>
     <!-- ФИШКИ КОНЕЦ -->
 
     <!-- ПРИМЕР НАЧАЛО -->
     <section class="example">
-      <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.</p>
-        <div class="example__list">
-          <p class="example__item example__total">5 кг</p>
-          <p class="example__item example__desc">снижение веса</p>
-        </div>
-        <div class="example__list">
-          <p class="example__item example__total">60 дней</p>
-          <p class="example__item example__desc">затрачено времени</p>
-        </div>
-        <p class="example__money">затраты на питание: 15 000 руб.</p>
-        <img class="example__cat-big" src="../img/bigcat.png" width="311" height="232" alt="Упитаный котик">
-        <img class="example__cat-little" src="../img/littlecat.png" width="251" height="240" alt="Стойный котик">
-        <div class="example__switch">
-          <p class="example__switch-was">было</p>
-          <p class="example__switch-became">стало</p>
-        </div>
+      <h2 class="example__title title">Живой пример</h2>
+      <p class="example__desc text">
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+        часов в день.
+      </p>
+      <ul class="example__list">
+        <li class="example__item"><span class="example__total">5 кг</span><span class="example__desc">снижение
+            веса</span></li>
+        <li class="example__item"><span class="example__total">60</span><span class="example__desc">дней затрачено
+            времени</span></li>
+      </ul>
+      <p class="example__money">затраты на питание: 15 000 руб.</p>
+      <img class="example__cat--big" src="./img/beforecat.png" width="311" height="232" alt="Упитаный котик">
+      <img class="example__cat--little" src="./img/aftercat.png" width="251" height="240" alt="Стройный котик">
+      <div class="example__switch">
+        <button class="example__switch--was">было</button>
+        <div><button class="example__button"></button></div>
+        <button class="example__switch--became">стало</button>
       </div>
     </section>
     <!-- ПРИМЕР КОНЕЦ -->
@@ -107,35 +116,41 @@
     <!-- СОТРУДНИЧЕСТВО НАЧАЛО -->
     <section class="partners">
       <div class="partners__list">
-        <p class="partners__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <h2 class="partners__invite">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+      <img class="parthners__map" src="./img/location.png" width="320" height="362" alt="Карта местонахождения">
     </section>
     <!-- СОТРУДНИЧЕСТВО КОНЕЦ -->
-
-    <!-- КАРТА НАЧАЛО -->
-    <section class="map">
-      <img src="../img/map.png" width="320" height="362" alt="Карта местонахождения">
-    </section>
-    <!-- КАРТА КОНЕЦ -->
   </main>
 
   <!-- ПОДВАЛ НАЧАЛО -->
   <footer class="page__footer">
+
     <section class="footer">
-      <img class="footer__logo" src="../img/logofooter.svg" width="128" height="24" alt="Логотип компании">
+      <img class="footer__logo" src="./img/footerlogo.svg" width="128" height="24" alt="Логотип компании">
       <ul class="footer__list">
-        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logovk.svg"
-              alt="Логотип ВКонтакте"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logoinst.svg"
-              alt="Логотип Инстаграм"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logofacebook.svg"
-              alt="Логотип Фэйсбук"></li></a>
+        <li class="footer__item">
+          <a href="#">
+            <img class="footer__item-image footer__item-image--vk" src="./img/vklogo.svg" alt="Логотип ВКонтакте">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <img class="footer__item-image footer__item-image--inst" src="./img/instlogo.svg" alt="Логотип Инстаграм">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <img class="footer__item-image footer__item-image--fb" src="./img/fblogo.svg" alt="Логотип Фэйсбук">
+          </a>
+        </li>
       </ul>
       <p class="footer__academy">HTML Academy</p>
-      <a href="#"><img class="footer__academy-logo" width="27" height="34" src="../img/logoacademy.svg"
+      <a href="#"><img class="footer__academy-logo" width="27" height="34" src="./img/htmllogoicon.svg"
           alt="Логотип HTML Academy"></a>
     </section>
+
   </footer>
   <!-- ПОДВАЛ КОНЕЦ -->
 

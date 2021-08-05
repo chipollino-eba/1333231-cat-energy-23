@@ -9,8 +9,11 @@
 <body class="page__body">
   <!-- ШАПКА НАЧАЛО-->
   <header class="page-header">
-    <a class="page-hader__logo" href="index.html">
-      <img class="page-header__logo-image" src="../img/logoheader.svg" width="191" height="38" alt="Логотип Cat Energy">
+    <a class="page-hader__logo link" href="index.html">
+      <img src="./img/logoone.svg" alt="Маленький логотип">
+    </a>
+    <a class="page-hader__logo link" href="index.html">
+      <img src="./img/logotwo.svg" alt="Текстовый логотип">
     </a>
     <!-- НАВИГАЦИЯ НАЧАЛО -->
     <nav class="main-nav">
@@ -19,20 +22,15 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <a href="index.html">
-            <li class="site-list__item">Главная</li>
-          </a>
-          <a href="catalog.html">
-            <li class="site-list__item">Каталог продукции</li>
-          </a>
-          <a href="form.html">
-            <li class="site-list__item">Подбор программы</li>
-          </a>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
     <!-- НАВИГАЦИЯ КОНЕЦ -->
   </header>
+  <!-- ШАПКА КОНЕЦ -->
 
   <main class="page__main">
     <section class="selection selection-wrapper">
@@ -40,102 +38,79 @@
       <p class="selection__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
       <!--ФОРМА НАЧАЛО -->
-      <div class="form-wrapper">
+      <section class="form-wrapper">
+
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
           <div class="form__cat">
-            <p class="form__name">
-              <label class="form__text" for="name">Имя:*
-                <input class="form__text" type="text" name="name" id="name" placeholder="БАРСИК">
-              </label>
-            </p>
+            <label class="form__text" for="name">Имя:*
+              <input class="form__text" type="text" name="name" id="name" placeholder="БАРСИК">
+            </label>
 
-            <p class="form__weight">
-              <label class="form__text" for="weight">Вес(кг):*
-                <input class="form__text" type="text" name="weight" id="weight" placeholder="7">
-              </label>
-            </p>
+            <label class="form__text" for="weight">Вес(кг):*
+              <input class="form__text" type="text" name="weight" id="weight" placeholder="7">
+            </label>
 
-            <p class="form__age">
-              <label class="form__text" for="age">Возраст (лет):
-                <input class="form__text" type="text" name="age" id="age" placeholder="7">
-              </label>
-            </p>
+            <label class="form__text" for="age">Возраст (лет):
+              <input class="form__text" type="text" name="age" id="age" placeholder="7">
+            </label>
           </div>
 
           <div class="form__food">
-            <p class="form__slim">
-              <label class="form__type">
-                <input class="form__type-text" type="radio" name="type" value="Похудение" checked>Похудение
-                <!-- <div></div> -->
-              </label>
-            </p>
+            <label class="form__type">
+              <input class="form__type-text" type="radio" name="type" value="Похудение" checked>Похудение
+            </label>
 
-            <p class="form__pro">
-              <label class="form__type">
-                <input class="form__type-text" type="radio" name="type" value="Набор массы">Набор массы
-                <!-- <div></div> -->
-              </label>
-            </p>
+            <label class="form__type">
+              <input class="form__type-text" type="radio" name="type" value="Набор массы">Набор массы
+            </label>
 
-            <p class="form__doubt">
-              <label class="form__type">
-                <input class="form__type-text" type="radio" name="type" value="Не знаю (нужен ваш совет)">Не знаю (нужен
-                ваш совет)
-                <!-- <div></div> -->
-              </label>
-            </p>
+            <label class="form__type">
+              <input class="form__type-text" type="radio" name="type" value="Не знаю (нужен ваш совет)">Не знаю (нужен
+              ваш совет)
+            </label>
           </div>
 
           <div class="form__owner">
             <h3 class="form__subtitle">Контактные данные владельца кота</h3>
-            <p>
-              <label class="form__text" for="email">E-mail:*
-                <input class="form__text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-              </label>
-            </p>
-            <p>
-              <label class="form__text" for="tel">Телефон:*
-                <input class="form__text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
-              </label>
-            </p>
+            <label class="form__text" for="email">E-mail:*
+              <input class="form__text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="form__text" for="tel">Телефон:*
+              <input class="form__text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+            </label>
 
             <h3 class="form__subtitle">Комментарий</h3>
             <label class="form__text" for="text">
-              <input class="form__text" id="text" type="text" name="text" placeholder="Расскажите обо всех повадках кота">
+              <input class="form__text" id="text" type="text" name="text"
+                placeholder="Расскажите обо всех повадках кота">
             </label>
           </div>
 
           <h3 class="form__subtitle">Дополнительно</h3>
+          <label for="sugar">
+            <input class="form__check-text" type="checkbox" name="sugar" id="sugar">сахарозаменитель
+          </label>
 
-          <p class="form__check">
-            <label for="sugar">
-              <input class="form__check-text" type="checkbox" name="sugar" id="sugar">сахарозаменитель
-            </label>
-          </p>
-          <p class="form__check">
-            <label for="water">
-              <input class="form__check-text" type="checkbox" name="water" id="water">питьевая
-              вода
-            </label>
-          </p>
-          <p class="form__check">
-            <label for="milk">
-              <input class="form__check-text" type="checkbox" name="milk" id="milk">молоко
-            </label>
-          </p>
+          <label for="water">
+            <input class="form__check-text" type="checkbox" name="water" id="water">питьевая вода
+          </label>
 
-          <p class="form__check">
-            <label for="vitamin">
-              <input class="form__check-text" type="checkbox" name="vitamin" id="vitamin">витамины
-            </label>
-          </p>
+          <label for="milk">
+            <input class="form__check-text" type="checkbox" name="milk" id="milk">молоко
+          </label>
+
+          <label for="vitamin">
+            <input class="form__check-text" type="checkbox" name="vitamin" id="vitamin">витамины
+          </label>
 
           <button class="form__submit form__submit-text" type="submit">Отправить заявку</button>
 
         </form>
+
         <p class="form__text-down">* - Обязательные поля</p>
-      </div>
+
+      </section>
 
     </section>
     <!-- ФОРМА КОНЕЦ -->
@@ -143,36 +118,42 @@
     <!-- СОТРУДНИЧЕСТВО НАЧАЛО -->
     <section class="partners">
       <div class="partners__list">
-        <p class="partners__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <h2 class="partners__invite">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+      <img class="parthners__map" src="./img/location.png" width="320" height="362" alt="Карта местонахождения">
     </section>
     <!-- СОТРУДНИЧЕСТВО КОНЕЦ -->
-
-    <!-- КАРТА НАЧАЛО -->
-    <section class="map">
-      <img src="../img/map.png" width="320" height="362" alt="Карта местонахождения">
-    </section>
-    <!-- КАРТА КОНЕЦ -->
 
   </main>
 
   <!-- ПОДВАЛ НАЧАЛО -->
   <footer class="page__footer">
+
     <section class="footer">
-      <img class="footer__logo" src="../img/logofooter.svg" width="128" height="24" alt="Логотип компании">
+      <img class="footer__logo" src="./img/footerlogo.svg" width="128" height="24" alt="Логотип компании">
       <ul class="footer__list">
-        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logovk.svg"
-              alt="Логотип ВКонтакте"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logoinst.svg"
-              alt="Логотип Инстаграм"></li></a>
-        <li class="footer__item"><a href="#"><img class="footer__item-image" src="../img/logofacebook.svg"
-              alt="Логотип Фэйсбук"></li></a>
+        <li class="footer__item">
+          <a href="#">
+            <img class="footer__item-image footer__item-image--vk" src="./img/vklogo.svg" alt="Логотип ВКонтакте">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <img class="footer__item-image footer__item-image--inst" src="./img/instlogo.svg" alt="Логотип Инстаграм">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <img class="footer__item-image footer__item-image--fb" src="./img/fblogo.svg" alt="Логотип Фэйсбук">
+          </a>
+        </li>
       </ul>
       <p class="footer__academy">HTML Academy</p>
-      <a href="#"><img class="footer__academy-logo" width="27" height="34" src="../img/logoacademy.svg"
+      <a href="#"><img class="footer__academy-logo" width="27" height="34" src="./img/htmllogoicon.svg"
           alt="Логотип HTML Academy"></a>
     </section>
+
   </footer>
   <!-- ПОДВАЛ КОНЕЦ -->
 
