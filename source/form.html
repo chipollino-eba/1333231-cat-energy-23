@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -21,10 +22,16 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+        <ul class="main-nav__list site-list list">
+          <li class="site-list__item">
+            <a class="link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="link" href="form.html">Подбор программы</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -88,27 +95,38 @@
           </div>
 
           <h3 class="form__subtitle">Дополнительно</h3>
-          <label for="sugar">
-            <input class="form__check-text" type="checkbox" name="sugar" id="sugar">сахарозаменитель
-          </label>
+          <ul class="form__list list">
 
-          <label for="water">
-            <input class="form__check-text" type="checkbox" name="water" id="water">питьевая вода
-          </label>
+            <li class="form__item">
+              <label class="form__sugar" for="sugar">
+                <input class="form__check-text" type="checkbox" name="sugar" id="sugar">сахарозаменитель
+              </label>
+            </li>
 
-          <label for="milk">
-            <input class="form__check-text" type="checkbox" name="milk" id="milk">молоко
-          </label>
+            <li class="form__item">
+              <label class="form__water" for="water">
+                <input class="form__check-text" type="checkbox" name="water" id="water">питьевая вода
+              </label>
+            </li>
 
-          <label for="vitamin">
-            <input class="form__check-text" type="checkbox" name="vitamin" id="vitamin">витамины
-          </label>
+            <li class="form__item">
+              <label class="form__milk" for="milk">
+                <input class="form__check-text" type="checkbox" name="milk" id="milk">молоко
+              </label>
+            </li>
 
-          <button class="form__submit form__submit-text" type="submit">Отправить заявку</button>
+            <li class="form__item">
+              <label class="form__vitamin" for="vitamin">
+                <input class="form__check-text" type="checkbox" name="vitamin" id="vitamin">витамины
+              </label>
+            </li>
+
+          </ul>
+          <button class="form__submit form__submit-text button" type="submit">Отправить заявку</button>
 
         </form>
 
-        <p class="form__text-down">* - Обязательные поля</p>
+        <p class="form__text-down">*  Обязательные поля</p>
 
       </section>
 
@@ -116,7 +134,7 @@
     <!-- ФОРМА КОНЕЦ -->
 
     <!-- СОТРУДНИЧЕСТВО НАЧАЛО -->
-    <section class="partners">
+    <section class="partners partners-gray">
       <div class="partners__list">
         <h2 class="partners__invite">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -132,7 +150,7 @@
 
     <section class="footer">
       <img class="footer__logo" src="./img/footerlogo.svg" width="128" height="24" alt="Логотип компании">
-      <ul class="footer__list">
+      <ul class="footer__list list">
         <li class="footer__item">
           <a href="#">
             <img class="footer__item-image footer__item-image--vk" src="./img/vklogo.svg" alt="Логотип ВКонтакте">
