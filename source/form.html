@@ -7,13 +7,13 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page__body container">
   <!-- ШАПКА НАЧАЛО-->
   <header class="page-header">
-    <a class="page-hader__logo link" href="index.html">
+    <a class="page-hader__logo-image link" href="index.html">
       <img src="./img/logoone.svg" alt="Маленький логотип">
     </a>
-    <a class="page-hader__logo link" href="index.html">
+    <a class="page-hader__logo-text link" href="index.html">
       <img src="./img/logotwo.svg" alt="Текстовый логотип">
     </a>
     <!-- НАВИГАЦИЯ НАЧАЛО -->
@@ -54,6 +54,8 @@
               <input class="form__text" type="text" name="name" id="name" placeholder="БАРСИК">
             </label>
 
+            <div></div>
+
             <label class="form__text" for="weight">Вес(кг):*
               <input class="form__text" type="text" name="weight" id="weight" placeholder="7">
             </label>
@@ -67,22 +69,24 @@
             <label class="form__type">
               <input class="form__type-text" type="radio" name="type" value="Похудение" checked>Похудение
             </label>
-
+            <div></div>
             <label class="form__type">
               <input class="form__type-text" type="radio" name="type" value="Набор массы">Набор массы
             </label>
-
+            <div></div>
             <label class="form__type">
               <input class="form__type-text" type="radio" name="type" value="Не знаю (нужен ваш совет)">Не знаю (нужен
               ваш совет)
             </label>
           </div>
 
+          <h3 class="form__subtitle">Контактные данные владельца кота</h3>
           <div class="form__owner">
-            <h3 class="form__subtitle">Контактные данные владельца кота</h3>
+
             <label class="form__text" for="email">E-mail:*
               <input class="form__text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
             </label>
+            <div></div>
             <label class="form__text" for="tel">Телефон:*
               <input class="form__text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
             </label>
@@ -126,7 +130,7 @@
 
         </form>
 
-        <p class="form__text-down">*  Обязательные поля</p>
+        <p class="form__text-down">*-Обязательные поля</p>
 
       </section>
 

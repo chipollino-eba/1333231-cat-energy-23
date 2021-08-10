@@ -1,10 +1,19 @@
-.features {}
+.features {
+  outline: 2px solid black;
+}
 
 .features__title {}
 
 .features__list {}
 
-.features__item-image {}
+.features__item-image {
+  &--leaf,
+  &--water,
+  &--eat,
+  &--alarm {
+    padding-bottom: 20px;
+  }
+}
 
 .features__item-image--leaf {}
 
